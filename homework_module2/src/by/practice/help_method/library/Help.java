@@ -97,6 +97,18 @@ public class Help {
 
 	}
 
+	// выводит заполненный двумерный массив действительных чисел
+	public static void doubleTwoDimencionalOutput(double[][] array, int count) {
+		if (array == null)
+			return;
+		for (int i = 0; i < count; i++) {
+			for (int j = 0; j < array[i].length; j++) {
+				System.out.printf("%.01f ", array[i][j]);
+			}
+			System.out.println();
+		}
+
+	}
 	// выводит заполненный массив действительный чисел
 	public static void arrayOutput(double[] array, int count) {
 		if (array == null)
